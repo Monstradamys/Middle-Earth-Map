@@ -1,4 +1,4 @@
-# Карта Средиземья. 
+# Карта Средиземья
 ## <a href="https://monstradamys.github.io/Middle-Earth-Map/">Демонстрация</a>
 ## Для запуска собранного проекта:
 Перейдите в папку dist и запустите index.html
