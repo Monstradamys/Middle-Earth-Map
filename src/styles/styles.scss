@@ -1,0 +1,138 @@
+
+
+.main-block {
+    position: relative;
+
+    width: 650px;
+    min-height: 400px;
+
+    margin: 30px auto;
+    padding: 10px;
+    
+    // background: rgba(48, 201, 233, 0.3);
+    background-image: url("https://lossietereinos.com/wp-content/uploads/2013/05/fondo1.jpg");
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+.main-block__list {
+    display: inline-block;
+    position: absolute;
+
+    width: 40%;
+
+    left: 0;
+    top: 50px;
+
+    list-style: none;
+    padding: 0;
+    margin: 0 5px 10px 5px;
+
+    &-element {
+        position: relative;
+        padding: 5px;
+        height: 40px;
+
+        background: #f3b860;
+        margin: 5px 3px;
+        font-size: 18px;
+
+        &-text {
+            line-height: 35px;
+            color: #fff;
+            text-shadow: 1px 1px 3px rgb(167, 167, 167);
+        }
+
+        &-button{
+            position: absolute;
+            
+            top: 13px;
+            right: 5px;
+
+            padding: 3px 5px;
+
+            font-weight: bold;
+            font-size: 16px;
+
+            background: none;    
+            border: none;
+            color: rgb(212, 14, 14);
+
+            z-index: 10;
+            &:hover {
+                color: rgb(29, 5, 5);
+                cursor: pointer;
+            }
+    
+            &:enabled {
+                outline: none;
+            }
+
+        }
+    }
+}
+
+.main-block__list-element-movable {
+    background: #8bd6e6;
+}
+
+.main-block__input {
+    width: 185px;
+    position: relative;
+
+    margin: 7px 5px 7px 7px;
+    padding: 3px;
+
+    font-size: 16px;
+    &:enabled {
+        outline: none;
+    }
+}
+
+.main-block__button {
+    position: relative;
+    border: none;
+    padding: 3px 6px;
+
+
+    background: #f3b860;
+
+    outline: 2.5px solid #7c5924;
+    color: rgb(95, 19, 19);
+
+    font-size: 16px;
+    font-weight: bold;
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+
+.map {
+    display: inline-block;
+    position: absolute;
+
+    width: 360px;
+    min-height: 400px;
+
+    right: 10px;
+    
+    padding-left: 10px;
+   
+
+    text-align: center;
+
+
+    &::before {
+        content: "";        
+        position: absolute;
+        width: 10px;
+        height: 422px;
+
+        left: -18px;
+        top: -11px;
+
+
+        border-right: 5px dashed rgb(224, 23, 23);
+    }
+}
